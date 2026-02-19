@@ -1,0 +1,12 @@
+stateEstimate.roll	 	# Estimated Phi
+stateEstimate.pitch	 	# Estimated Theta
+stateEstimate.yaw		# Estimated Psi 
+controller.roll		# Desired Phi
+controller.pitch		# Desired Theta
+controller.yaw		 	# Desired Psi
+controller.r_roll	 	# Measured roll rate
+controller.r_pitch	 	# Measured pitch rate
+controller..r_yaw		# Measured yaw rate
+controller.rollRate    	# Desired roll rate
+controller.pitchRate     	# Desired pitch rate
+controller.yawRate      	# Desired yaw rate
