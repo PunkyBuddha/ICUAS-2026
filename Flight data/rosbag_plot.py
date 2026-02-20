@@ -6,7 +6,7 @@ from collections import defaultdict
 # --- Configuração do Usuário ---
 
 # Caminho para o seu arquivo rosbag
-bag_file = '/home/fabricio/Flight_data/26-06 12:12.bag' # <-- MUDE AQUI
+bag_file = '/home/fabricio/Flight_data/26-06 18-06.bag' # <-- MUDE AQUI
 
 # Pares de tópicos que você deseja plotar juntos.
 # Cada tupla na lista será um subplot.
