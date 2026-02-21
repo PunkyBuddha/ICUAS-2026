@@ -388,9 +388,9 @@ void controllerINDI(control_t *control, const setpoint_t *setpoint,
 		//G1 is the control effectiveness. In the yaw axis, we need something additional: G2.
 		//It takes care of the angular acceleration caused by the change in rotation rate of the propellers
 		//(they have significant inertia, see the paper mentioned in the header for more explanation)
-		indi.du.p = 0.7f / indi.g1.p * (indi.angular_accel_ref.p - indi.rate_d[0]);
-		indi.du.q = 0.7f / indi.g1.q * (indi.angular_accel_ref.q - indi.rate_d[1]);
-		indi.du.r = 0.7f / (indi.g1.r + indi.g2) * (indi.angular_accel_ref.r - indi.rate_d[2] + indi.g2 * indi.du.r);
+		indi.du.p = 0.65f / indi.g1.p * (indi.angular_accel_ref.p - indi.rate_d[0]);
+		indi.du.q = 0.65f / indi.g1.q * (indi.angular_accel_ref.q - indi.rate_d[1]);
+		indi.du.r = 0.65f / (indi.g1.r + indi.g2) * (indi.angular_accel_ref.r - indi.rate_d[2] + indi.g2 * indi.du.r);
 
 
 		/*
